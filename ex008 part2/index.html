@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h2>Fonte Monoespaçada</h2>
+
+    <p>Nesse texto temos uma frase com texto Monoespaçado usando a tag &lt;code&gt; <code>o que estiver aqui dentro estara com o texto monoespaçado</code> &lt;/code&gt;</p>
+
+    <h2>Codigo-Fonte / Pré-formatação</h2>
+
+    <p>Para deixar um texto com identação de código basta usar a tag &lt;pre&gt;&lt;/pre&gt; e dentro dela usar a tag &lt;code&gt;&lt;/code&gt; para deixar o texto monoespaçado</p>
+
+    <pre>
+        <code>
+            Exemplo:
+
+            num = int(input("Digite um numero:"))
+            if num % 2 ==0:
+                print(f"O numero {num} é PAR")
+            else:
+                print(f"O numero {num} é Impar")
+            print("Fim do Programa")
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+
+    <p>para fazer citações basta usar a tag &lt;q&gt;&lt;/q&gt;</p>
+
+    <p>Exemplo: <br> Como diria um professor de programação: <q>o computador é um burro muito rápido</q></p>
+
+    <h2>Citações Completas</h2>
+
+    <p>para fazer citações completas basta usar a tag &lt;blockquote&gt;&lt;/blockquote&gt;</p>
+
+    <p>
+        Segundo Jeff Noble, no seu livro HTML para Leigos:
+        <blockquote> <!-- uso <blockquote cite "link de onde tirou a citação" para refenciar no seu site>-->
+            A diferença entre elementos inline e um bloco de
+            texto é importante. Os elementos HTML neste capítulo
+            descrevem os blocos de texto.
+        </blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+
+    <p>para fazer Abreviações basta usar a tag &lt;abbr title=""&gt;&lt;/abbr&gt; dentro do title coloque o significado da abreviação</p>
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h2>Texto Invertido</h2>
+
+    <p>para fazer o texto ficar inverto basta usar a tag &lt;bdo dir="rtl"&gt;&lt;/bdo&gt; dentro do dir coloque "rtl" para "right to left" ou "ltr" para "left ro right"</p>
+
+    <p><bdo dir="rtl">Estou estudando HTML e CSS.</bdo></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            border: 100px solid transparent;
+            text-align: center;
+            border-image: url(bordas/borda.png) 100 stretch;
+            /*
+            ordem do shorthand border-image:
+
+            border-image-source: url('bordas/borda.png'); (1)
+            border-image-slice: 100; (2)
+            border-image-repeat: stretch; (3)
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+</body>
+</html>

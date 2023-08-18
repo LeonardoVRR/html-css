@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: aqua;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: rgb(189, 230, 230);
+        }
+
+        a:hover {
+            color: rgb(0, 88, 88);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: chartreuse;
+        }
+
+        .link_externo::before {
+            content: '✂ ';
+            font-weight: normal;
+        }
+        
+        .link_externo:active {
+            color: rgb(114, 56, 56);
+        }
+
+        .link_interno::after{
+            content: ' ⚝';
+            font-weight: normal;
+            color: rgb(251, 255, 0);
+        }
+
+        .link_interno::before {
+            content: '⚝ ';
+            font-weight: normal;
+            color: rgb(251, 255, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a class="link_interno" href="houver.html" target="_self" rel="prev">Exemplo Houver</a></li>
+        <li><a class="link_interno" href="pseudoclasse.html" target="_self" rel="prev">Pseudo-classes</a></li>
+        <li><a class="link_externo" href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank" rel="nofollow">Pseudo-elementos (w3schools)</a></li>
+    </ul>
+</body>
+</html>

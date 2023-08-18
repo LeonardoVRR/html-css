@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>aumente e diminua o tamanho do navegar para ver a imagem trocar  dinamicamente</p>
+
+    <picture> <!--permite criar vários sources, para inserir um novo soucer deve ser sempre acima do anterior-->
+        <source media="(max-width: 730px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="imgs/foto-m.png" type="image/png"> <!--altera a imagem que vai ser exibida se a imagem for menor que 1050px-->
+        <img src="imgs/foto-g.png" alt="imagem dinamica">
+    </picture>
+
+    <h1>Reprodução de audio</h1>
+    <p>para reproduzir um audio no HTML basta usar a tag &lt;audio src=""&gt;&lt;/audio&gt;</p>
+
+    <audio src="audio/Rain on Car Heavy.mp3" controls></audio>
+
+    <p>outro modo de adicionar audio é o seguinte:</p>
+
+    <pre>
+        <code>
+            &lt;audio&gt;
+                &lt;source src="" type=""&gt;
+            &lt;/audio&gt;
+        </code>
+</pre>
+
+<audio preload="metadata" controls loop> <!-- o metadata ele só exibe coisas como duração, data, nome e so carrega de fato o arquivo quando é usado ex: dar play no audio -->
+    <source src="audio/MBB - Feel Good (Vlog No Copyright Music)(MP3_128K).mp3" type="audio/mpeg">
+</audio>
+
+
+</body>
+</html>

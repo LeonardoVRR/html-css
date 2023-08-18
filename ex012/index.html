@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video em HTML5</title>
+</head>
+<body>
+    <h1>Reprodução de videos hospedados localmente</h1>
+
+    <p>para reproduzir um video no HTML basta usar a tag &lt;video src=""&gt;&lt;/video&gt;</p>
+
+    <p>outro modo de adicionar video é o seguinte:</p>
+
+    <pre>
+        <code>
+            &lt;video&gt;
+                &lt;source src="" type="video/mp4"&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <p>Esse video está hospedado no meu proprio servidor</p>
+
+    <video src="midia/kashino.webm" width="560" poster="midia/azur lane.jpg" controls loop></video> <!--use o atributo width para definir um tamanho p/ o video, caso contrário o video ficara com o tamanho original-->
+
+    <!--para colocar uma thumbnail no video basta colocar o atributo poster dentro da tag "video"-->
+
+    <h1>Esse video está hospedado externamente em uma plataforma de streaming</h1>
+
+    <p>Esse video está hospedado no youtube</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mF20OBfwV8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

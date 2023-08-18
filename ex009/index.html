@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Listas Ordenadas</h2>
+    
+    <p>para criar uma lista ordenada de itens basta usar a tag  &lt;ol&gt;&lt;/ol&gt; e para adicionar itens a ela basta usar a tag &lt;li&gt;&lt;/li&gt; dentro dela.</p>
+
+    <ol>
+        <!-- usar o </li> para fechar a tag <li> é opcional se não o colocar não tera nenhum problema no codigo (válido somente p/ HTML5)-->
+        <li>acordar</li>
+        <li>escovar os dentes</li>
+        <li>usar o banheiro</li>
+        <li>trocar de roupa</li>
+        <li>tomar café da manhã</li>
+        <li>colocar o tênis</li>
+        <li>ir trabalhar</li>
+    </ol>
+
+    <p>Lista type="1" / Numérico</p>
+
+    <ol type="1" start="8">
+        <!-- pode usar o "type" dentro do <ol> para definir o tipo da lista, pode usar o "start dentro do <ol> para definir a partir de qual numero vai começar a lista"-->
+        <li>acordar</li>
+        <li>escovar os dentes</li>
+        <li>usar o banheiro</li>
+        <li>trocar de roupa</li>
+        <li>tomar café da manhã</li>
+        <li>colocar o tênis</li>
+        <li>ir trabalhar</li>
+    </ol>
+
+    <p>Lista type="A" e type="a" / Letras do alfabeto</p>
+
+    <!-- o "start" só aceita parametros numericos, mas funciona com todos os tipos de listas-->
+
+    <ol type="A">
+        <!-- type="A" vai fazer a marcação dos itens com letras do alfabeto em maiusculas e o type="a" faz a mesma coisa mas com letras minusculas-->
+        <li>acordar</li>
+        <li>escovar os dentes</li>
+        <li>usar o banheiro</li>
+        <li>trocar de roupa</li>
+        <li>tomar café da manhã</li>
+        <li>colocar o tênis</li>
+        <li>ir trabalhar</li>
+    </ol>
+
+    <p>Lista type="I" e type="i" / Numeros Romanos</p>
+
+    <ol type="I">
+        <!-- type="I" vai fazer a marcação dos itens com numeros romanos em maiusculas e o type="i" faz a mesma coisa mas com numeros romanos em minusculas-->
+        <li>acordar</li>
+        <li>escovar os dentes</li>
+        <li>usar o banheiro</li>
+        <li>trocar de roupa</li>
+        <li>tomar café da manhã</li>
+        <li>colocar o tênis</li>
+        <li>ir trabalhar</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+
+    <p>para criar uma lista não ordenada de itens basta usar a tag  &lt;ul&gt;&lt;/ul&gt; e para adicionar itens a ela basta usar a tag &lt;li&gt;&lt;/li&gt; dentro dela.</p>
+
+    <h3>tipos de marcadores da lista não ordenada</h3>
+
+    <mark>Marcador de bolinha aberta (type="circle")</mark>
+
+    <p>Lista de Compras:</p>
+
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Ovos</li>
+        <li>Maionese</li>
+        <li>Guárana</li>
+        <li>Café</li>
+        <li>Uvas</li>
+        <li>Tomate</li>
+        <li>Azeite</li>
+        <li>Couve-flor</li>
+    </ul>
+
+    <mark>Marcador de bolinha fechada (type="disc")</mark>
+
+    <p>Lista de Compras:</p>
+
+    <ul type="disc">
+        <!-- usar o </li> para fechar a tag <li> é opcional se não o colocar não tera nenhum problema no codigo (válido somente p/ HTML5)-->
+        <li>Pão</li>
+        <li>Ovos</li>
+        <li>Maionese</li>
+        <li>Guárana</li>
+        <li>Café</li>
+        <li>Uvas</li>
+        <li>Tomate</li>
+        <li>Azeite</li>
+        <li>Couve-flor</li>
+    </ul>
+
+    <mark>Marcador quadrado (type="square")</mark>
+
+    <p>Lista de Compras:</p>
+
+    <ul type="square">
+        <li>Pão</li>
+        <li>Ovos</li>
+        <li>Maionese</li>
+        <li>Guárana</li>
+        <li>Café</li>
+        <li>Uvas</li>
+        <li>Tomate</li>
+        <li>Azeite</li>
+        <li>Couve-flor</li>
+    </ul>
+
+    <h2>Lista dentro Lista</h2>
+    
+    <p><mark>Lista ordenada dentro de uma Lista não ordenada</mark></p>
+
+
+    <p>Cardapio:</p>
+
+    <ul>
+        <li>Comidas:</li>
+        <ol>
+            <li>Macarão</li>
+            <li>Omelete</li>
+            <li>Feijoada</li>
+            <li>Panqueca</li>
+            <li>X-Tudo</li>
+            <li>X-Salada</li>
+            <li>Bolo de chocolate</li>
+            <li>Bolo de laranja</li>
+        </ol>
+        <br>
+        <li>Bebidas:</li>
+        <ol>
+            <li>Café</li>
+            <li>Pepsi</li>
+            <li>Guárana</li>
+            <li>Coca-Cola</li>
+            <li>Limonada</li>
+            <li>Suco de uva</li>
+            <li>Suco de laranja</li>
+            <li>Suco de maracuja</li>
+        </ol>
+    </ul>
+
+    <p><mark>Lista não ordenada dentro de uma Lista ordenada</mark></p>
+
+    <p>Cardapio:</p>
+
+    <ol>
+        <li>Comidas:</li>
+        <ul>
+            <li>Macarão</li>
+            <li>Omelete</li>
+            <li>Feijoada</li>
+            <li>Panqueca</li>
+            <li>X-Tudo</li>
+            <li>X-Salada</li>
+            <li>Bolo de chocolate</li>
+            <li>Bolo de laranja</li>
+        </ul>
+        <br>
+        <li>Bebidas:</li>
+        <ul>
+            <li>Café</li>
+            <li>Pepsi</li>
+            <li>Guárana</li>
+            <li>Coca-Cola</li>
+            <li>Limonada</li>
+            <li>Suco de uva</li>
+            <li>Suco de laranja</li>
+            <li>Suco de maracuja</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+
+    <p>Para criar um lista de definições basta usar a tag abaixo:</p>
+
+    <pre>
+        <code>
+            &lt;dl&gt;
+                &lt;dt&gt;Termo&lt;/dt&gt;
+                &lt;dd&gt;Descrição&lt;/dd&gt;
+            &lt;/dl&gt;
+        </code>
+    </pre>
+
+    <p><mark>Exemplo de uso:</mark></p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+    </dl>
+
+    <pre>
+        <code>
+            &lt;dl&gt;
+                &lt;dt&gt;HTML&lt;/dt&gt; (Termo)
+                &lt;dd&gt;Linguagem de marcação para a criação do conteúdo de um site.&lt;/dd&gt; (Descrição)
+            &lt;/dl&gt;
+        </code>
+    </pre>
+</body>
+</html>
